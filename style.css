@@ -730,12 +730,12 @@ span {
 #menu-icon .animate,
 .home.show-animate .animate {
     animation: showRight 1s ease forwards;
-    animation-delay: calc(.3s * var(--i));
+    animation-delay: calc(.05s * var(--i));
 }
 
 .animate.scroll {
-    transition: 1s ease;
-    transition-delay: calc(.3s / var(--i));
+    transition: .5s ease;
+    transition-delay: calc(.05s / var(--i));
     animation: none;
 }
 
@@ -753,7 +753,7 @@ section:nth-child(odd) .animate.scroll,
 .skills.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll,
 .footer.show-animate .animate.scroll {
-    transition-delay: calc(.3s * var(--i));
+    transition-delay: calc(.05s * var(--i));
     width: 0;
 }
 
