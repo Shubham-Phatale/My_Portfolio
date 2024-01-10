@@ -1,359 +1,575 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Shubham Phatale</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header design -->
+
+    <header class="header">
+      <a href="#" class="logo"
+        >Shubham Phatale.<span class="animate" style="--i: 1"></span
+      ></a>
+
+      <div class="bx bx-menu" id="menu-icon">
+        <span class="animate" style="--i: 2"></span>
+      </div>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <!-- <a href="#projects">Project</a> -->
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+
+        <span class="active-nav"></span>
+        <span class="animate" style="--i: 2"></span>
+      </nav>
+    </header>
+
+    <!-- home section -->
+
+    <section class="home show-animate" id="home">
+      <div class="home-content">
+        <h1>
+          Hello there, I'm <span>Shubham Phatale</span
+          ><span class="animate" style="--i: 2"></span>
+        </h1>
+        <div class="text-animate">
+          <h3>Software Developer</h3>
+          <span class="animate" style="--i: 3"></span>
         </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Shubham Phatale</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div> 
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/Profile Photo.PNG" alt="Shubham Phatale Profile Picture">
+        <p>
+          I'm an enthusiastic and inventive software developer located in New
+          York. My background includes developing intuitive applications,
+          enhancing user experiences, and bringing about notable productivity
+          gains. I enjoy coming up with innovative ideas that combine creativity
+          and cutting-edge technology.
+          <span class="animate" style="--i: 4"></span>
+        </p>
+        <div class="btn-box">
+          <a
+            href="./assets/Shubham_Phatale_Resume.pdf"
+            class="btn"
+            target="_blank"
+            >View Resume</a
+          >
+          <a href="#contact" class="btn">Let's Talk</a>
+          <span class="animate" style="--i: 5"></span>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Shubham Phatale</h1>
-            <p class="section__text__p2">Software Developer</p>
-            <div class="btn-container">
-                <button
-                    class="btn btn-color-2"
-                    onclick="window.open('./assets/Shubham_Phatale_Resume.pdf')"
-                >Download Resume</button>
-                <button
-                    class="btn btn-color-1"
-                    onclick="location.href='.#contact'"
-                >Contact Info</button>
-            </div>
-            <div id="social-container">
-                <img 
-                    src="./assets/linkedin.png" 
-                    alt="My LinkedIn Profile"
-                    class="icon" 
-                    onclick="location.href='https://www.linkedin.com/in/shubhamp112/'"
-                />
-                <img 
-                    src="./assets/github.png" 
-                    alt="My Github Profile"
-                    class="icon" 
-                    onclick="location.href='https://github.com/Shubham-Phatale'"
-                />
-            </div>
-        </div>
+      </div>
+      <div class="web-animation">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          src="https://lottie.host/05352f26-040d-4aa0-bc7e-2106b4b0f641/bUBo8GT4YO.json"
+          loop
+          autoplay
+          direction="1"
+          mode="normal"
+        ></lottie-player>
+        <span class="animate" style="--i: 7"></span>
+      </div>
+      <div class="home-sci">
+        <a href="https://www.linkedin.com/in/shubhamp112/"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a href="https://github.com/Shubham-Phatale"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <span class="animate" style="--i: 6"></span>
+      </div>
     </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container2">
-                <img 
-                    src="./assets/about piuc.jpeg"
-                    alt="Profile Picture"
-                    class="about-pic"
-                />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img 
-                            src="./assets/work.png"
-                            alt="Experience icon"
-                            class="icon"
-                        />
-                        <h3>Experience</h3>
-                        <p>3+ Years <br/>Software Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img 
-                            src="./assets/education.png"
-                            alt="Education icon"
-                            class="icon"
-                        />
-                        <h3>Education</h3>
-                        <p>B.E. in Information Technology <br/>M.sc. in Computer Science</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        Software developer with a solid history in mobile application development and an expertise of coming up with fresh ideas. Highly motivated and results-driven. committed to producing high-quality software while enhancing time management, problem-solving, and Agile development abilities. I'm eager to use my skills to build cutting-edge applications while bringing my knowledge and dynamism to a creative team.
-                    </p>
-                </div>
-            </div>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+      <h2 class="heading">
+        About <span>Me</span><span class="animate scroll" style="--i: 1"></span>
+      </h2>
+      <div class="about-row">
+        <div class="image-box">
+          <div class="about-img">
+            <img src="./assets/about-pic.jpg" alt="" />
+            <span class="circle-spin"></span>
+            <span class="animate scroll" style="--i: 2"></span>
+          </div>
         </div>
-        <img 
-            src="./assets/arrow-down.png" 
-            alt="Arrow Icon" 
-            class="icon arrow" 
-            onclick="location.href='./#experience'"
-        />
+
+        <div class="about-content">
+          <h3>
+            Software Developer!<span
+              class="animate scroll"
+              style="--i: 3"
+            ></span>
+          </h3>
+          <p>
+            I set out on a path driven by my passion for creativity and my love
+            of solving problems when I first started exploring the world of
+            technology. From negotiating the complex puzzles of code to planning
+            flawless user interfaces, my journey has demonstrated adaptability
+            and agility. My journey from enthusiastic amateur to proficient
+            coder has been nourished by a variety of projects and an unwavering
+            curiosity. I am a self-confessed coder that is passionate about
+            creating solutions that are intuitive and am always looking for new
+            ways to combine creativity and utility.
+            <span class="animate scroll" style="--i: 4"></span>
+          </p>
+
+          <p>
+            Aside from my technical endeavors, my compass also navigates through
+            the realms of leadership and collaboration. With experience steering
+            teams toward a unified vision, I've cultivated a leadership style
+            rooted in empathy and guidance. The thrill of innovation is
+            amplified when shared; hence, I thrive within collaborative
+            environments, fostering creativity and synergy. My journey isn't
+            just a culmination of technical milestones but a testament to the
+            fusion of creativity, leadership, and a relentless pursuit of
+            excellence.
+            <span class="animate scroll" style="--i: 5"></span>
+          </p>
+        </div>
+      </div>
     </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-containers">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img 
-                            src="./assets/verify.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/verify.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/verify.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>DART</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/verify.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basics</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/verify.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Material UI</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/verify.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
+
+    <!-- education section design -->
+
+    <section class="education" id="education">
+      <h2 class="heading">
+        My <span>Journey</span
+        ><span class="animate scroll" style="--i: 1"></span>
+      </h2>
+
+      <div class="education-row">
+        <div class="education-column">
+          <h3 class="title">
+            Education<span class="animate scroll" style="--i: 2"></span>
+          </h3>
+
+          <div class="education-box">
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"> 2023 - 2025</i>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img 
-                            src="./assets/verify.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>MySQL</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/verify.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Git</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/verify.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Java</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+                <h3>Master of Science - New York Institue of Technology</h3>
+                <h1>Computer Science</h1>
+                <p>New York - United States of America</p>
+              </div>
             </div>
-        </div>
-        <img 
-            src="./assets/arrow-down.png" 
-            alt="Arrow Icon" 
-            class="icon arrow" 
-            onclick="location.href='./#projects'"
-        />
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-containers">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                        src="./assets/project Logo.jpg" 
-                        alt="Project 1"
-                        class="project-img"
-                    />
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"> 2016 - 2020</i>
                 </div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
-                <div class="btn-container">
-                    <button 
-                        class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://github.com/'">
-                        Github
-                    </button>
-                    <button 
-                        class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://github.com/'">
-                        Live Demo
-                    </button>
-                </div>
+                <h3>
+                  Bachelor of Engineering - Shah & Anchor Kutchhi Engineering
+                  College
+                </h3>
+                <h1>Information Technology</h1>
+                <p>Mumbai - India</p>
+              </div>
             </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                        src="./assets/project Logo.jpg" 
-                        alt="Project 1"
-                        class="project-img"
-                    />
-                </div>
-                <h2 class="experience-sub-title project-title">Project Two</h2>
-                <div class="btn-container">
-                    <button 
-                        class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://github.com/'">
-                        Github
-                    </button>
-                    <button 
-                        class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://github.com/'">
-                        Live Demo
-                    </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                        src="./assets/project Logo.jpg" 
-                        alt="Project 1"
-                        class="project-img"
-                    />
-                </div>
-                <h2 class="experience-sub-title project-title">Project Three</h2>
-                <div class="btn-container">
-                    <button 
-                        class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://github.com/'">
-                        Github
-                    </button>
-                    <button 
-                        class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://github.com/'">
-                        Live Demo
-                    </button>
-                </div>
-            </div>
+            <span class="animate scroll" style="--i: 3"></span>
+          </div>
         </div>
-        </div>
-        <img 
-            src="./assets/arrow-down.png" 
-            alt="Arrow Icon" 
-            class="icon arrow" 
-            onclick="location.href='./#projects'"
-        />
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact">
-            <form action="#" method="post">
-                <div class="input-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+
+        <div class="education-column">
+          <h3 class="title">
+            Experience - 3.2 yrs<span
+              class="animate scroll"
+              style="--i: 5"
+            ></span>
+          </h3>
+
+          <div class="education-box">
+            <div class="education-content" onclick="toggleList(this)">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"> Dec.2022 - Aug.2023</i>
                 </div>
-                <div class="input-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="input-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <div class="input-group">
-                    <button type="submit">Send</button>
-                </div>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <h3>MITS Global Consultancy Pvt Ltd.</h3>
+                <h1>Flutter Developer</h1>
+                <ul>
+                  <li>
+                    Collaborated on iOS app development within a 30-member team,
+                    creating modules and optimizing code, resulting in a 20%
+                    reduction in errors, enhancing user experience.
+                  </li>
+                  <li>
+                    Independently developed an internal attendance application,
+                    streamlining task assignment and employee management,
+                    leading to a 15% improvement in overall work efficiency.
+                  </li>
                 </ul>
+                <i class="bx bx-caret-down drop-down-icon"></i>
+              </div>
             </div>
-        </nav>
-        <p>Copyright &#169 2023 Shubham Phatale. All Rights Reserved</p>
+            <div class="education-content" onclick="toggleList(this)">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"> July.2022 - Dec.2022</i>
+                </div>
+                <h3>Phatale Machineries</h3>
+                <h1>Software Developer</h1>
+                <ul>
+                  <li>
+                    Led the creation of a comprehensive product sales
+                    application, driving a 30% boost in sales via engaging video
+                    ads and informative product content. Crafted an intuitive
+                    and user-friendly interface.
+                  </li>
+
+                  <li>
+                    Enhanced inventory management using MVC, MySQL, PHP API,
+                    Reduced inventory errors by 40%, ensuring accurate stock
+                    levels and efficient order processing.
+                  </li>
+                </ul>
+                <i class="bx bx-caret-down drop-down-icon"></i>
+              </div>
+            </div>
+            <div class="education-content" onclick="toggleList(this)">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"> Oct.2021 - July.2022</i>
+                </div>
+                <h3>Zeki Software Solutions Pvt Ltd.</h3>
+                <h1>Software Developer (Flutter)</h1>
+                <ul>
+                  <li>
+                    Led a 5-member frontend team in redesigning an Android
+                    application, introducing a token redemption mechanism,
+                    boosting user retention by 20%.
+                  </li>
+                  <li>
+                    Ensured app quality and accessibility on Play Store and App
+                    Store through continuous maintenance and updates. Achieved a
+                    15% increase in app ratings and a 10% decrease in bug
+                    reports.
+                  </li>
+                </ul>
+                <i class="bx bx-caret-down drop-down-icon"></i>
+              </div>
+            </div>
+            <div class="education-content" onclick="toggleList(this)">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"> Oct.2020 - Oct.2021</i>
+                </div>
+                <h3>Multy Graphics</h3>
+                <h1>Mobile Application Developer (Flutter)</h1>
+                <ul>
+                  <li>
+                    Enhanced application performance and user experience by
+                    addressing flaws, adding interactive features, and
+                    maintaining GitHub repositories. Reduced app crashes by 25%.
+                  </li>
+                </ul>
+                <i class="bx bx-caret-down drop-down-icon"></i>
+              </div>
+            </div>
+            <div class="education-content" onclick="toggleList(this)">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"> May.2020 - Sep.2020</i>
+                </div>
+                <h3>Interface Sense Consultancy Pvt Ltd.</h3>
+                <h1>Flutter Developer Intern</h1>
+                <ul>
+                  <li>
+                    Throughout my internship, I strategized, developed, and
+                    debugged various applications to grasp their workflow
+                    intricacies and performance nuances, culminating in the
+                    creation of a personalized e-commerce platform for ordering
+                    mugs with customizable options.
+                  </li>
+                </ul>
+                <i class="bx bx-caret-down drop-down-icon"></i>
+              </div>
+            </div>
+            <div class="education-content" onclick="toggleList(this)">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"> Dec.2019 - Jan.2020</i>
+                </div>
+                <h3>Mindscript</h3>
+                <h1>Android Developer Intern</h1>
+                <ul>
+                  <li>
+                    Proficient grasp of program architecture, fundamental
+                    workflow, and design principles. Contributed to developing,
+                    maintaining, and enhancing an Android application for a
+                    specialized IT tool.
+                  </li>
+                </ul>
+                <i class="bx bx-caret-down drop-down-icon"></i>
+              </div>
+            </div>
+            <div class="education-content" onclick="toggleList(this)">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"> June.2019 - July.2019</i>
+                </div>
+                <h3>Sahu Technologies</h3>
+                <h1>Web Developer (Intern)</h1>
+                <ul>
+                  <li>
+                    I gained comprehensive expertise in a spectrum of
+                    website-related tasks, functions, and implementation
+                    techniques, while also contributing to the company's core
+                    division, acquiring knowledge of agile sprinting and adept
+                    application management within larger teams.
+                  </li>
+                </ul>
+                <i class="bx bx-caret-down drop-down-icon"></i>
+              </div>
+            </div>
+            <span class="animate scroll" style="--i: 6"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- project section design -->
+    <!-- <section class="project" id="project">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="project-column">
+            <div class="project-row">
+                <div class="project-content">
+                    <div class="project-img">
+                        <img src="./assets/project Logo.jpg" alt="">
+                    </div>
+                    <h3 class="project-title">Project one</h3>
+                    <div class="btn-box btns">
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-img">
+                        <img src="./assets/project Logo.jpg" alt="">
+                    </div>
+                    <h3 class="project-title">Project one</h3>
+                    <div class="btn-box btns">
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-img">
+                        <img src="./assets/project Logo.jpg" alt="">
+                    </div>
+                    <h3 class="project-title">Project one</h3>
+                    <div class="btn-box btns">
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-row">
+                <div class="project-content">
+
+                </div>
+                <div class="project-content">
+                    
+                </div>
+                <div class="project-content">
+                    
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- skills section design -->
+    <section class="skills" id="skills">
+      <h2 class="heading">
+        My <span>Skills</span
+        ><span class="animate scroll" style="--i: 1"></span>
+      </h2>
+
+      <div class="skills-row">
+        <div class="skills-column">
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="skills-icon">
+                <img src="./assets/Dart.png" alt="" />
+                <h1>Dart</h1>
+                <span class="animate scroll" style="--i: 3"></span>
+              </div>
+
+              <div class="skills-icon">
+                <img src="./assets/swift.png" alt="" />
+                <h1>Swift</h1>
+                <span class="animate scroll" style="--i: 4"></span>
+              </div>
+
+              <div class="skills-icon">
+                <img src="./assets/python.png" alt="" />
+                <h1>Python</h1>
+                <span class="animate scroll" style="--i: 5"></span>
+              </div>
+
+              <div class="skills-icon">
+                <img src="./assets/java.png" alt="" />
+                <h1>Java</h1>
+                <span class="animate scroll" style="--i: 6"></span>
+              </div>
+
+              <div class="skills-icon">
+                <img src="./assets/page.png" alt="" />
+                <h1>HTML</h1>
+                <span class="animate scroll" style="--i: 7"></span>
+              </div>
+
+              <div class="skills-icon">
+                <img src="./assets/cascading-style-sheets.png" alt="" />
+                <h1>CSS</h1>
+                <span class="animate scroll" style="--i: 8"></span>
+              </div>
+
+              <div class="skills-icon">
+                <img src="./assets/java-script.png" alt="" />
+                <h1>JavaScript</h1>
+                <span class="animate scroll" style="--i: 9"></span>
+              </div>
+
+              <div class="skills-icon">
+                <img src="./assets/php.png" alt="" />
+                <h1>PHP</h1>
+                <span class="animate scroll" style="--i: 10"></span>
+              </div>
+
+              <div class="skills-icon">
+                <img src="./assets/mysql.png" alt="" />
+                <h1>MySQL</h1>
+                <span class="animate scroll" style="--i: 11"></span>
+              </div>
+
+              <div class="skills-icon">
+                <img src="./assets/Flutter.png" alt="" />
+                <h1>Flutter</h1>
+                <span class="animate scroll" style="--i: 12"></span>
+              </div>
+
+              <div class="skills-icon">
+                <img src="./assets/android.png" alt="" />
+                <h1>Android</h1>
+                <span class="animate scroll" style="--i: 13"></span>
+              </div>
+
+              <div class="skills-icon">
+                <img src="./assets/apple.png" alt="" />
+                <h1>iOS</h1>
+                <span class="animate scroll" style="--i: 14"></span>
+              </div>
+
+              <div class="skills-icon">
+                <img src="./assets/firebase.png" alt="" />
+                <h1>Firebase</h1>
+                <span class="animate scroll" style="--i: 15"></span>
+              </div>
+
+              <div class="skills-icon">
+                <img src="./assets/aws.png" alt="" />
+                <h1>AWS</h1>
+                <span class="animate scroll" style="--i: 16"></span>
+              </div>
+
+              <div class="skills-icon">
+                <img src="./assets/git.png" alt="" />
+                <h1>git</h1>
+                <span class="animate scroll" style="--i: 17"></span>
+              </div>
+            </div>
+            <span class="animate scroll" style="--i: 2"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">
+        Contact <span>Me!</span
+        ><span class="animate scroll" style="--i: 1"></span>
+      </h2>
+
+      <form action="#">
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off" required/>
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input type="email" placeholder="Email Address" id="email" class="item" autocomplete="off" required />
+            <span class="focus"></span>
+          </div>
+
+          <span class="animate scroll" style="--i: 3"></span>
+        </div>
+
+        <div class="input-box">
+          <div class="input-field">
+            <input type="tel" placeholder="Mobile Number" id="phone" class="item" autocomplete="off" minlength="10"/>
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input type="text" placeholder="Email Subject" id="subject" class="item" autocomplete="off" required/>
+            <span class="focus"></span>
+          </div>
+
+          <span class="animate scroll" style="--i: 5"></span>
+        </div>
+
+        <div class="textarea-field">
+          <textarea
+            name=""
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            class="item"
+            autocomplete="off"
+            required
+          ></textarea>
+          <span class="focus"></span>
+
+          <span class="animate scroll" style="--i: 7"></span>
+        </div>
+
+        <div class="btn-box btns">
+          <button type="submit" class="btn">Send Message</button>
+
+          <span class="animate scroll" style="--i: 9"></span>
+        </div>
+      </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Shubham Phatale | All Rights Reserved.</p>
+
+        <span class="animate scroll" style="--i: 1"></span>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+
+        <span class="animate scroll" style="--i: 3"></span>
+      </div>
     </footer>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
