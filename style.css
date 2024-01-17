@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-@import url('https://fonts.cdnfonts.com/css/the-suavity');
+@import url('https://db.onlinewebfonts.com/c/ae63d9c1e28a8cbd6e7206061484239e?family=The+Suavity');
 
 *{
     margin: 0;
@@ -52,10 +52,10 @@ body {
 
 .logo {
     position: relative;
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: var(--text-color);
     font-weight: 500;
-    font-family: 'The Suavity', sans-serif;
+    font-family: 'The Suavity';
 }
 
 .navbar {
