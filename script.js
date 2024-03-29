@@ -25,7 +25,7 @@ let navLinks = document.querySelectorAll("header nav a");
 window.onscroll = () => {
   sections.forEach((sec) => {
     let top = window.scrollY;
-    let offset = sec.offsetTop - 100;
+    let offset = sec.offsetTop - 500;
     let height = sec.offsetHeight;
     let id = sec.getAttribute("id");
 
@@ -38,9 +38,7 @@ window.onscroll = () => {
       });
 
       sec.classList.add("show-animate");
-    } else {
-      sec.classList.remove("show-animate");
-    }
+    } 
   });
 
   let header = document.querySelector("header");
