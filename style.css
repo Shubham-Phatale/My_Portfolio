@@ -539,10 +539,10 @@ span {
 
 .project-img img {
   width: 90%;
-  height: 160px;
+  min-height: 160px auto;
   margin-top: 1.5rem;
   box-shadow: 0 4px 10px var(--text-color);
-  object-fit: cover;
+  object-fit: contain;
   z-index: 1;
 }
 
